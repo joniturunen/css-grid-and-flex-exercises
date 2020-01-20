@@ -8,5 +8,5 @@
 
 [CSS Flex layout](./flex.html)
 
-Repositoryn [GitHub Pages](https://joniturunen.github.io/css-grid-and-flex-exercises/) sivun kautta yllä olevat linkit toimivat selaimessa.
-[Palaa takaisin GitHub repositoryyn](https://github.com/joniturunen/css-grid-and-flex-exercises).
+[GitHub Pages](https://joniturunen.github.io/css-grid-and-flex-exercises/) sivulla layoutit testattavissa.
+[GitHub repositoryssä](https://github.com/joniturunen/css-grid-and-flex-exercises) versiohistoria ja lähdekoodit.
