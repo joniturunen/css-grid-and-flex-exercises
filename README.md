@@ -4,6 +4,6 @@
 
 ## Linkit leiskoihin
 
-[CSS Grid layout](../grid.html)
+[CSS Grid layout](./grid.html)
 
-[CSS Flex layout](../flex.html)
+[CSS Flex layout](./flex.html)
