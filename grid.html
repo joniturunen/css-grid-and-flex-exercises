@@ -9,8 +9,9 @@
       @media (min-width: 720px) {
         .layout {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-auto-rows: minmax(90px, auto);
+          grid-template-columns: 2fr 1fr;
+          grid-template-rows: 1fr 2fr 1fr;
+
           grid-gap: 1em;
           padding: 0.4em;
           font: 1em "Fira Sans", sans-serif;
@@ -36,33 +37,34 @@
         justify-content: center;
       }
       .header {
-        grid-column: 1/4;
+        grid-column: 1/3;
         align-items: center;
       }
       .main {
-        grid-column: 1/3;
+        grid-column: 1/2;
         grid-row: 2/5;
         padding: 1em 1em 1em 1em;
       }
       .sidebar {
-        grid-column: 3/3;
+        grid-column: 2/3;
         grid-row: 2/5;
+        padding: 1em 1em 1em 1em;
       }
 
       /* media */
       @media (max-width: 719px) {
         .main {
-          grid-column: 1/4;
+          grid-column: 1/3;
           grid-row: 2;
         }
         .sidebar {
-          grid-column: 1/4;
+          grid-column: 1/3;
           grid-row: 3;
         }
       }
       /* /media */
       .footer {
-        grid-column: 1/4;
+        grid-column: 1/3;
         align-items: center;
       }
     </style>
@@ -73,7 +75,7 @@
         <h3>header</h3>
       </div>
       <div class="main">
-        <div class="titletext"><h3>main</h3></div>
+        <h3>main</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
           nobis! Aliquam adipisci atque quisquam eaque, ab earum excepturi.
@@ -90,7 +92,7 @@
           suscipit. Rerum similique ex veniam quaerat.
         </p>
       </div>
-      <div class="sidebar titletext"><h3>sidebar</h3></div>
+      <div class="sidebar"><h3>sidebar</h3></div>
       <div class="footer titletext"><h3>footer</h3></div>
     </div>
   </body>
