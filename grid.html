@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hamk:Demo:Flex</title>
+    <style>
+      .layout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(90px, auto);
+        grid-gap: 1em;
+        padding: 0.4em;
+        color: #fff;
+        font: 1em "Fira Sans", sans-serif;
+      }
+      .layout > div {
+        background: steelblue;
+      }
+      .header {
+        grid-column: 1/4;
+      }
+      .titletext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        grid-column: 1/3;
+        grid-row: 2/5;
+        padding: 0em 1em 1em 1em;
+      }
+      .sidebar {
+        grid-column: 3/3;
+        grid-row: 2/5;
+      }
+
+      .footer {
+        grid-column: 1/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header titletext">
+        <h3>header</h3>
+      </div>
+      <div class="main">
+        <div class="titletext"><h3>main</h3></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+          nobis! Aliquam adipisci atque quisquam eaque, ab earum excepturi.
+          Magnam asperiores eum consequuntur, quaerat nisi nihil quos iste
+          aliquid dignissimos quo.
+        </p>
+
+        <p>
+          Unde explicabo quasi ut a eligendi ab vitae eum ea inventore sint
+          rerum, nam ipsam iste quis beatae porro. Amet, reiciendis doloremque.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+          distinctio commodi temporibus praesentium optio doloribus perspiciatis
+          dicta pariatur nihil. Praesentium minima magnam nobis facilis
+          suscipit. Rerum similique ex veniam quaerat.
+        </p>
+      </div>
+      <div class="sidebar titletext"><h3>sidebar</h3></div>
+      <div class="footer titletext"><h3>footer</h3></div>
+    </div>
+  </body>
+</html>
