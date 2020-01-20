@@ -7,25 +7,22 @@
     <title>Hamk:Demo:Flex</title>
     <style>
       @media (min-width: 720px) {
-        .flex1,
-        .flex2,
-        .flex3 {
+        .flexcontainer {
           display: flex;
+          flex-wrap: wrap;
         }
       }
       .header,
       .footer {
         display: flex;
-        flex: 1;
+        flex: 100%;
         justify-content: center;
       }
 
-      .flex1 div,
-      .flex2 div,
-      .flex3 div {
+      .flexcontainer div {
         background: steelblue;
         font: 1em "Fira Sans", sans-serif;
-        padding: 1em;
+        padding: 0.5em;
         margin: 0.5em;
         color: #fff;
       }
@@ -43,13 +40,10 @@
     </style>
   </head>
   <body>
-    <div class="flex1">
+    <div class="flexcontainer">
       <div class="header">
         <h3>header</h3>
       </div>
-    </div>
-
-    <div class="flex2">
       <div class="main">
         <h3>main</h3>
         <p>
@@ -69,11 +63,7 @@
         </p>
       </div>
       <div class="sidebar"><h3>sidebar</h3></div>
-    </div>
-    <div class="flex3">
-      <div class="footer">
-        <h3>footer</h3>
-      </div>
+      <div class="footer"><h3>footer</h3></div>
     </div>
   </body>
 </html>
